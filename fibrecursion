@@ -1,1 +1,28 @@
-
+#include<stdio.h>
+int Fibrec(int n)
+{
+   if ( n == 0 )
+      return 0;
+   else if ( n == 1 )
+      return 1;
+   else
+      return ( Fibrec(n-1) + Fibrec(n-2) );
+} 
+int main()
+{
+   int n, i = 0, c;
+   printf("Enter lenght of series you want:");
+   scanf("%d",&n);
+ 
+   printf("Fibonacci series is: \n");
+ 
+   for ( c = 1 ; c <= n ; c++ )
+   {
+      printf("%d\n", Fibrec(i));
+      i++; 
+   }
+ 
+   return 0;
+}
+ 
+ 
