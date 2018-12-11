@@ -10,16 +10,16 @@ int Fibrec(int n)
 } 
 int main()
 {
-   int n, i = 0, c;
+   int n, count = 0, i;
    printf("Enter lenght of series you want:");
    scanf("%d",&n);
  
    printf("Fibonacci series is: \n");
  
-   for ( c = 1 ; c <= n ; c++ )
+   for ( i = 1 ; i <= n ; i++ )
    {
-      printf("%d\n", Fibrec(i));
-      i++; 
+      printf("%d\n", Fibrec(count));
+      count++; 
    }
  
    return 0;
